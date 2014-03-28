@@ -55,13 +55,23 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       }
     })
 
-    // the pet tab has its own child nav-view and history
+    // the offer tab has its own child nav-view and history
     .state('tab.offer-index', {
       url: '/offers',
       views: {
         'offers-tab': {
           templateUrl: 'templates/offer-index.html',
           controller: 'OfferIndexCtrl'
+        }
+      }
+    })
+
+    .state('tab.offer-detail', {
+      url: '/offer/:offerId',
+      views: {
+        'offers-tab': {
+          templateUrl: 'templates/offer-detail.html',
+          controller: 'OfferDetailCtrl'
         }
       }
     })

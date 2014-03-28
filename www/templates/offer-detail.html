@@ -1,0 +1,42 @@
+<!--
+  This template loads for the 'tab.offer-detail' state (app.js)
+  'offer' is a $scope variable created in the offerCtrl controller (controllers.js)
+  The offerCtrl pulls data from the offers service (service.js)
+  The offers service returns an array of offer data
+-->
+<ion-view title="{{offer.Oportunidad}}">
+  <ion-content has-header="true" padding="true">
+    <div class="list card">
+      <div class="item item-avatar">
+        <h2>{{offer.Oportunidad}}</h2>
+        <p>{{offer.Ubicacion}}</p>
+      </div>
+
+      <div class="item item-body">
+        <p>
+          <a href="#" class="subdued">1 Like</a>
+          <a href="#" class="subdued">5 Comments</a>
+        </p>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+
+        <a class="tab-item" href="#">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+
+      </div>
+    </div>
+    <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/offers">Ofertas</a></p>
+  </ion-content>
+</ion-view>

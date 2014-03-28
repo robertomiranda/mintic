@@ -25,7 +25,7 @@ Services.factory('PetService', function() {
   }
 });
 
-  Services.factory('OfferService', function($resource) {
-    var path = "http://poi.colombiajoven.gov.co/api/Oferta/:id";
-    return $resource(path, {id: "@PkOferta"});
-  });
+Services.factory('OfferService', function($resource) {
+  var path = "http://poi.colombiajoven.gov.co/api/Oferta/:offerId";
+  return $resource(path, {offerId: "@PkOferta"});
+});

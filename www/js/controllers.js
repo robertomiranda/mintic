@@ -10,10 +10,7 @@ Controllers.controller('PetIndexCtrl', function($scope, PetService) {
 // A simple controller that fetches a list of data from a service
 Controllers.controller('OfferIndexCtrl',["$scope", "OfferService",  function($scope, OfferService) {
   // "Pets" is a service returning mock data (services.js)
-  console.log("hey");
-  //$scope.offers = [];
   $scope.offers = OfferService.query();
-  console.log($scope.offers);
 }]);
 
 
@@ -22,3 +19,9 @@ Controllers.controller('PetDetailCtrl', function($scope, $stateParams, PetServic
   // "Pets" is a service returning mock data (services.js)
   $scope.pet = PetService.get($stateParams.petId);
 });
+
+// A simple controller that shows a tapped item's data
+Controllers.controller('OfferDetailCtrl', ["$scope", "$stateParams", "OfferService", function($scope, $stateParams, OfferService) {
+  // "Offers" is a service returning mock data (services.js)
+  $scope.offer = OfferService.get({offerId: $stateParams.offerId});
+}]);
