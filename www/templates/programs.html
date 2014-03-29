@@ -3,17 +3,15 @@
   It was wired up in the app config (app.js)
   The 'offers' data comes from its $scope within OfferIndexCtrl (controller.js)
 -->
-<ion-view title="Offer Information">
+<ion-view title="Programas">
   <ion-content has-header="true" has-tabs="true">
+ <div class="list">
+<ion-item ng-repeat="program in programs" type="item-text-wrap" href="/tab/program/{{program.id}}">
+ <p>{{program.title}}</p>
 
-    <ion-list>
+  </ion-item>
 
-      <ion-item ng-repeat="offer in offers" type="item-text-wrap" href="#/tab/offer/{{offer.PkOferta}}">
-        <h3>{{offer.Oportunidad}}</h3>
-        <p>{{offer.Ubicacion}}</p>
-      </ion-item>
-
-    </ion-list>
+</div>
 
   </ion-content>
 </ion-view>

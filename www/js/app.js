@@ -26,18 +26,6 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     })
 
     // the pet tab has its own child nav-view and history
-    .state('tab.pet-index', {
-      url: '/pets',
-      views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-index.html',
-          controller: 'PetIndexCtrl'
-        }
-      }
-    })
-
-
-    // the pet tab has its own child nav-view and history
     .state('tab.station', {
       url: '/station',
       views: {
@@ -48,54 +36,27 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       }
     })
 
-    .state('tab.pet-detail', {
-      url: '/pet/:petId',
-      views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-detail.html',
-          controller: 'PetDetailCtrl'
-        }
-      }
-    })
-
-    .state('tab.adopt', {
-      url: '/adopt',
-      views: {
-        'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
-        }
-      }
-    })
-
     // the offer tab has its own child nav-view and history
-    .state('tab.offer-index', {
-      url: '/offers',
+    .state('tab.programs', {
+      url: '/programs',
       views: {
-        'offers-tab': {
-          templateUrl: 'templates/offer-index.html',
-          controller: 'OfferIndexCtrl'
+        'programs-tab': {
+          templateUrl: 'templates/programs.html',
+          controller: 'ProgramsCtrl'
         }
       }
     })
 
-    .state('tab.offer-detail', {
-      url: '/offer/:offerId',
+     .state('tab.program-detail', {
+      url: '/program/:programId',
       views: {
-        'offers-tab': {
-          templateUrl: 'templates/offer-detail.html',
-          controller: 'OfferDetailCtrl'
-        }
-      }
-    })
-
-    .state('tab.about', {
-      url: '/about',
-      views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html'
+        'programs-tab': {
+          templateUrl: 'templates/program-detail.html',
+          controller: 'ProgramDetailCtrl'
         }
       }
     });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/station');
