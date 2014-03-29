@@ -30,8 +30,8 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/station',
       views: {
         'station-tab': {
-          templateUrl: 'templates/station.html'//,
-          //controller: 'StationCtrl'
+          templateUrl: 'templates/station.html',
+          controller: 'StationCtrl'
         }
       }
     })
