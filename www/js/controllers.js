@@ -16,23 +16,26 @@ Controllers.controller('ProgramDetailCtrl', function($scope, $stateParams, Progr
   $scope.program = ProgramsService.get($stateParams.ProgramId);
 });
 
-Controllers.controller('StationCtrl', function($scope, $stateParams) {
+Controllers.controller('StationCtrl', function($scope, $stateParams, ProgramsService) {
   // "Pets" is a service returning mock data (services.js)
   console.log("Hola Mundo");
-  //var media = new Media("http://ia600200.us.archive.org/1/items/testmp3testfile/mpthreetest.mp3", function(){ console.log("success"); }, function(){ console.log("error");});
-  var media = new Media("http://75.102.43.195/kwmu2", function(){ console.log("success"); }, function(){ console.log("error");});
+  //var media = new Audio("http://ia600200.us.archive.org/1/items/testmp3testfile/mpthreetest.mp3");
+  var stationMedia = new Audio("http://75.102.43.195/kwmu2");
+  var programAudio;
   $scope.volume = 0.5;
-  $scope.play = function(){
-    media.play();
+  $scope.programs = ProgramsService.all();
+
+  $scope.playStation = function(){
+    stationMedia.play();
   }
 
-  $scope.upVolume = function(){
-    $scope.volume += 0.1;
-    media.setVolume($scope.volume + "");
+  $scope.pauseStation = function(){
+    stationMedia.pause();
+    programAudio.pause();
   }
 
-  $scope.downVolume = function(){
-    $scope.volume -= 0.1;
-    media.setVolume($scope.volume +  "");
+  $scope.playProgram = function(url){
+    programAudio = new Audio(url);
+    programAudio.play();
   }
 });

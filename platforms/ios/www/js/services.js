@@ -6,14 +6,28 @@ var Services = angular.module('starter.services',  ['ngResource']);
 
 
 Services.factory('ProgramsService', function($resource) {
-  var programs = [
-    { id: 0, title: 'Laura', description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.' },
-    { id: 1, title: 'Programa 2', description: 'Lovable. Loyal almost to a fault. Smarter than they let on.' },
-    { id: 2, title: 'Programa 3', description: 'Everyone likes turtles.' },
-    { id: 3, title: 'Programa 4', description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.' }
-    ];
   return {
     all: function() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET","http://outlook.mineducacion.gov.co:81",false);
+      xmlhttp.send();
+      txt=xmlhttp.responseText;
+
+      var parser = new DOMParser();
+      xmlDoc=parser.parseFromString(txt,"text/xml");
+
+      var programLinks = xmlDoc.getElementsByTagName("A");
+      var programs = [];
+      console.log(programLinks);
+
+      for(var i =0; i<programLinks.length; i++){
+        var program = programLinks[i];
+        var path = program.getAttribute("HREF");
+        var filename = path.replace(/^.*\/|\.[^.]*$/g, '');
+        var url = "http://outlook.mineducacion.gov.co:81" + path;
+        programs.push({url: url, name: unescape(filename)});
+      }
+
       return programs;
     },
     get: function(programId) {
