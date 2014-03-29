@@ -25,3 +25,8 @@ Controllers.controller('OfferDetailCtrl', ["$scope", "$stateParams", "OfferServi
   // "Offers" is a service returning mock data (services.js)
   $scope.offer = OfferService.get({offerId: $stateParams.offerId});
 }]);
+
+Controllers.controller('StationCtrl', function($scope, $stateParams) {
+  // "Pets" is a service returning mock data (services.js)
+  console.log("Hola Mundo");
+});

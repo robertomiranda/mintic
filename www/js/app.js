@@ -36,6 +36,18 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       }
     })
 
+
+    // the pet tab has its own child nav-view and history
+    .state('tab.station', {
+      url: '/station',
+      views: {
+        'station-tab': {
+          templateUrl: 'templates/station.html'//,
+          //controller: 'StationCtrl'
+        }
+      }
+    })
+
     .state('tab.pet-detail', {
       url: '/pet/:petId',
       views: {
@@ -86,7 +98,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/pets');
+  $urlRouterProvider.otherwise('/tab/station');
 
 });
 
