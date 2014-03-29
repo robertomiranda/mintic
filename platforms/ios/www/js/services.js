@@ -3,29 +3,22 @@ var Services = angular.module('starter.services',  ['ngResource']);
 /**
  * A simple example service that returns some data.
  */
-Services.factory('PetService', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
-  var pets = [
-    { id: 0, title: 'Cats', description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.' },
-    { id: 1, title: 'Dogs', description: 'Lovable. Loyal almost to a fault. Smarter than they let on.' },
-    { id: 2, title: 'Turtles', description: 'Everyone likes turtles.' },
-    { id: 3, title: 'Sharks', description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.' }
-  ];
 
+Services.factory('ProgramsService', function($resource) {
+  var programs = [
+    { id: 0, title: 'Laura', description: 'Furry little creatures. Obsessed with plotting assassination, but never following through on it.' },
+    { id: 1, title: 'Programa 2', description: 'Lovable. Loyal almost to a fault. Smarter than they let on.' },
+    { id: 2, title: 'Programa 3', description: 'Everyone likes turtles.' },
+    { id: 3, title: 'Programa 4', description: 'An advanced pet. Needs millions of gallons of salt water. Will happily eat you.' }
+    ];
   return {
     all: function() {
-      return pets;
+      return programs;
     },
-    get: function(petId) {
+    get: function(programId) {
       // Simple index lookup
-      return pets[petId];
+      return programs[programId];
     }
   }
-});
-
-Services.factory('OfferService', function($resource) {
-  var path = "http://poi.colombiajoven.gov.co/api/Oferta/:offerId";
-  return $resource(path, {offerId: "@PkOferta"});
-});
+  });
