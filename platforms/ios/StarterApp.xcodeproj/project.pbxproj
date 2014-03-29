@@ -47,6 +47,7 @@
 		501F684AA5164620AD0584B9 /* CDVCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A63D5FBC34EB29A74474F /* CDVCapture.m */; };
 		24387A25F4154C09867248CA /* CDVCapture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 414D7B6809A042EC8BD8B537 /* CDVCapture.bundle */; };
 		9EE9260A50A84E91ACCECA9A /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2611988CE28B4C0EBF5F2DE8 /* CDVSound.m */; };
+		A76BE63B4B4A4EC481D1CC5D /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07627BCC54E14A4385EB7F39 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		414D7B6809A042EC8BD8B537 /* CDVCapture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVCapture.bundle"; path = "CDVCapture.bundle"; sourceTree = "<group>"; };
 		2611988CE28B4C0EBF5F2DE8 /* CDVSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSound.m"; path = "org.apache.cordova.media/CDVSound.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		4B3756358BE04629AE0B7762 /* CDVSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSound.h"; path = "org.apache.cordova.media/CDVSound.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		07627BCC54E14A4385EB7F39 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3383C028C4974F1B938F710F /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 				67030CE940A6468E89BDA4F8 /* CDVCapture.h */,
 				2611988CE28B4C0EBF5F2DE8 /* CDVSound.m */,
 				4B3756358BE04629AE0B7762 /* CDVSound.h */,
+				07627BCC54E14A4385EB7F39 /* CDVInAppBrowser.m */,
+				3383C028C4974F1B938F710F /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "StarterApp/Plugins";
@@ -468,6 +473,7 @@
 				59974F5A14694B46A7CF1097 /* CDVAssetLibraryFilesystem.m in Sources */,
 				501F684AA5164620AD0584B9 /* CDVCapture.m in Sources */,
 				9EE9260A50A84E91ACCECA9A /* CDVSound.m in Sources */,
+				A76BE63B4B4A4EC481D1CC5D /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

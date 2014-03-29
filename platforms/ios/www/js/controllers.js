@@ -41,4 +41,8 @@ Controllers.controller('StationCtrl', function($scope, $stateParams, ProgramsSer
     programAudio.play();
     $scope.playing = true;
   }
+
+  $scope.twitter = function(){
+    window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline?450039386776690688'), '_blank', 'location=no');
+  }
 });

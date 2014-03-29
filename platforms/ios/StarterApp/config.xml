@@ -40,6 +40,9 @@
     <feature name="Media">
         <param name="ios-package" value="CDVSound" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
     <name>StarterApp</name>
     <description>
         A sample Ionic Framework app using Cordova and AngularJS
