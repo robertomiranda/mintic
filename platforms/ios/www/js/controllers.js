@@ -19,7 +19,7 @@ Controllers.controller('ProgramDetailCtrl', function($scope, $stateParams, Progr
 Controllers.controller('StationCtrl', function($scope, $stateParams, ProgramsService) {
   // "Pets" is a service returning mock data (services.js)
   //var media = new Audio("http://ia600200.us.archive.org/1/items/testmp3testfile/mpthreetest.mp3");
-  var stationMedia = new Audio("http://75.102.43.195/kwmu2");
+  var stationMedia = new Audio("http://107.170.105.58:8090/live.mp3");
   var programAudio;
   $scope.volume = 0.5;
   $scope.programs = ProgramsService.all();
