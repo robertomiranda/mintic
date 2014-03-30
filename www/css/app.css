@@ -5,7 +5,7 @@
   font-style: normal; }
 
 html,body,header{
-  width: 320px;
+  width: 360px;
 }
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
@@ -86,7 +86,7 @@ color:#f1339d;
 
   .pane{
 
-    width: 320px;
+    width: 360px;
   }
 .bar{
   height: 70px;
