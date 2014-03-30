@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal; }
 
+html,body,header{
+  width: 640px;
+}
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
     
