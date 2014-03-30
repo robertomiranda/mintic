@@ -9,40 +9,32 @@ html,body,header{
 }
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
-    background-size: 100%;
-    height: 290px;
+    background-size: 360px 240px ;
+    height: 240px;
     position: relative;
-    width:320px;
+    width:360px;
   }
   #play{
     background:  url(../img/play.png) no-repeat center top;
-    background-size: 60px;
+    background-size: 90px;
     background-color: transparent;
     border:none;
+    height: 90px;
     position: absolute;
-    left: 40px;
-    bottom: 60px;
+    left: 145px;
+    bottom: -4px;
   }
   #pause{
    background:  url(../img/pause.png) no-repeat center top;
-    background-size: 60px;
+    background-size: 65px;
     background-color: transparent;
     border:none;
     position: absolute;
-    left: 40px;
+    left: 145px;
     bottom: 60px;
   }
-  #o{
-    text-indent: -9999px;
-  }
-  #spotlight p{
-    font-family: "NexaLight";
-  font-size: 15px;
-    color:white;
-    position: absolute;
-    left: 95px;
-    bottom: 57px;
-  }
+ 
+
   #redsocial{
     background-color: #f7f5f5;
   }
@@ -98,14 +90,14 @@ color:#f1339d;
   }
 .bar{
   height: 70px;
-  width: 320px;
+  width: 360px;
 }
 .bar.bar-light .title{
   color:#eb7d15;
   font-family: "NexaLight";
   font-size: 32px;
   top:17px;
-  width: 320px;
+  width: 360px;
 }
 
 .ionic-logo {

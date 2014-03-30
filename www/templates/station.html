@@ -9,12 +9,8 @@
 <div id="spotlight">
   <button id ="play" class="button" ng-click="playStation()" ng-hide="playing"></button>
   <button id="pause" class="button" ng-click="pauseStation()" ng-show="playing"></button>
-  <p>http://www.inci.gov.co/</p>
 </div>
-<div id="redsocial">
-<button id="tw"class="button ion-social-twitter-outline" ng-click="twitter()"><p id="o">twitter</p></button>
-<button id="sk"class="button ion-social-skype-outline" ><p id="o">Skype</p></button>
-</div>
+
 
 </div>
 <ion-list >
@@ -29,6 +25,10 @@
 <p data-url="{{program.url}}">{{program.name}}</p>
 </ion-item>
 </ion-list>
+<div id="redsocial">
+<button id="tw"class="button ion-social-twitter-outline" ng-click="twitter()" title="twitter"></button>
+<button id="sk"class="button ion-social-skype-outline" title="skype" ></button>
+</div>
 
 </ion-content>
 </ion-view>
