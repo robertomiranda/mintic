@@ -6,7 +6,7 @@
 
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
-    background-size: 640px 460px;
+    
     height: 460px;
     position: relative;
     width:640px;
@@ -82,16 +82,18 @@ color:#f1339d;
 
 
   .pane{
-    top:28px;
+    top:18px;
+    width: 640px;
   }
 .bar{
-  height: 100px;
+  height: 70px;
+  width: 640px;
 }
 .bar.bar-light .title{
   color:#eb7d15;
   font-family: "NexaLight";
   font-size: 32px;
-  top:30px;
+  top:17px;
 }
 
 .ionic-logo {
