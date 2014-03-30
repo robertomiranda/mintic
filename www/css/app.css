@@ -1,8 +1,102 @@
-/* Your app's CSS, go crazy, make it your own */
+@font-face {
+  font-family: "NexaLight";
+  src: url("../fonts/NexaLight.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+  #spotlight{
+    background: url(../img/spotlight.png) no-repeat center top;
+    background-size: 640px 460px;
+    height: 460px;
+    position: relative;
+    width:640px;
+  }
+  #play{
+    background:  url(../img/play.png) no-repeat center top;
+    background-size: 40px;
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    left: 195px;
+    bottom: 80px;
+  }
+  #pause{
+    background:  url(../img/pause.png) no-repeat center top;
+    background-size: 40px;
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    left: 195px;
+    bottom: 80px;
+  }
+  #spotlight p{
+    font-family: "NexaLight";
+  font-size: 17px;
+    color:white;
+    position: absolute;
+    left: 255px;
+    bottom: 86px;
+  }
+
+ .item-divider{
+  background-color: #f7f5f5;
+min-height: 60px;
+padding-top:20px  ;
+padding-bottom:20px  ;
+font-size: 17px;
+font-family: "NexaLight";
+color:#f1339d;
+  }
+.item-content p {
+  font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.item-complex.active .item-content {
+  background-color: #493344;
+    color:#e6e2e2;
+    margin-bottom: 0;
+
+  }
+  .item-complex.active .item-content p{
+ 
+    color:#fff;
+
+  }
+  .item-complex .item-content {
+  background-color: #372031;
+  border-color:none!important;
+    color:#e6e2e2;
+
+  }
+  #tw{
+    background-color: transparent;
+    border:none;
+    font-size: 40px;
+  }
+    #sk{
+    background-color: transparent;
+    border:none;
+    font-size: 40px;
+  }
+
+
+  .pane{
+    top:28px;
+  }
+.bar{
+  height: 100px;
+}
+.bar.bar-light .title{
+  color:#eb7d15;
+  font-family: "NexaLight";
+  font-size: 32px;
+  top:30px;
+}
 
 .ionic-logo {
-  display: block;
-  margin: 15px auto;
-  width: 96px;
-  height: 96px;
+	display: block;
+	margin: 15px auto;
+	width: 96px;
+	height: 96px;
 }
