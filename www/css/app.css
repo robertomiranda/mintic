@@ -65,7 +65,7 @@ color:#f1339d;
   background-color: #493344;
     color:#e6e2e2;
     margin-bottom: 0;
-   
+
 
   }
   .item-complex.active .item-content p{
@@ -93,7 +93,7 @@ color:#f1339d;
 
 
   .pane{
-    
+
     width: 320px;
   }
 .bar{
@@ -113,4 +113,8 @@ color:#f1339d;
 	margin: 15px auto;
 	width: 96px;
 	height: 96px;
+}
+
+.tabs, header{
+  display: none !important;
 }
