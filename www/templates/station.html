@@ -7,13 +7,14 @@
 <ion-view title="Mobile radio">
 <ion-content has-header="true"  ng-controller="StationCtrl">
 <div id="spotlight">
-  <button id ="play" class="button" ng-click="playStation()" ng-hide="playing"></button>
-  <button id="pause" class="button" ng-click="pauseStation()" ng-show="playing"></button>
+  <button id ="play" class="button" ng-click="playStation()" ng-hide="playing"><p id="o">play</p></button>
+  <button id="pause" class="button" ng-click="pauseStation()" ng-show="playing"><p id="o">pause</p></button>
   <p>http://www.inci.gov.co/</p>
 </div>
-
-<button id="tw"class="button ion-social-twitter-outline" ng-click="twitter()"></button>
-<button id="sk"class="button ion-social-skype-outline" ></button>
+<div id="redsocial">
+<button id="tw"class="button ion-social-twitter-outline" ng-click="twitter()"><p id="o">twitter</p></button>
+<button id="sk"class="button ion-social-skype-outline" ><p id="o">Skype</p></button>
+</div>
 <ion-list >
 
 <div class="item item-divider">

@@ -10,35 +10,41 @@ html,body,header{
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
     background-size: 100%;
-    height: 340px;
+    height: 290px;
     position: relative;
     width:320px;
   }
   #play{
     background:  url(../img/play.png) no-repeat center top;
-    background-size: 20px;
+    background-size: 60px;
     background-color: transparent;
     border:none;
     position: absolute;
     left: 40px;
-    bottom: 80px;
+    bottom: 60px;
   }
   #pause{
-    background:  url(../img/pause.png) no-repeat center top;
-    background-size: 40px;
+   background:  url(../img/pause.png) no-repeat center top;
+    background-size: 60px;
     background-color: transparent;
     border:none;
     position: absolute;
-    left: 195px;
-    bottom: 90px;
+    left: 40px;
+    bottom: 60px;
+  }
+  #o{
+    display: none;
   }
   #spotlight p{
     font-family: "NexaLight";
   font-size: 15px;
     color:white;
     position: absolute;
-    left: 85px;
-    bottom: 94px;
+    left: 95px;
+    bottom: 57px;
+  }
+  #redsocial{
+    background-color: #f7f5f5;
   }
 
  .item-divider{
@@ -76,16 +82,18 @@ color:#f1339d;
     background-color: transparent;
     border:none;
     font-size: 40px;
+    margin:5px auto;
   }
     #sk{
     background-color: transparent;
     border:none;
     font-size: 40px;
+    margin:5px auto;
   }
 
 
   .pane{
-    top:14px;
+    
     width: 320px;
   }
 .bar{
