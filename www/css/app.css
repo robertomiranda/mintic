@@ -5,13 +5,13 @@
   font-style: normal; }
 
 html,body,header{
-  width: 480px;
+  width: 320px;
 }
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
     height: 460px;
     position: relative;
-    width:480px;
+    width:320px;
   }
   #play{
     background:  url(../img/play.png) no-repeat center top;
@@ -85,11 +85,11 @@ color:#f1339d;
 
   .pane{
     top:18px;
-    width: 480px;
+    width: 320px;
   }
 .bar{
   height: 70px;
-  width: 480px;
+  width: 320px;
 }
 .bar.bar-light .title{
   color:#eb7d15;
