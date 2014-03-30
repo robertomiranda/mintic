@@ -33,7 +33,7 @@ html,body,header{
     bottom: 60px;
   }
   #o{
-    display: none;
+    text-indent: -9999px;
   }
   #spotlight p{
     font-family: "NexaLight";
