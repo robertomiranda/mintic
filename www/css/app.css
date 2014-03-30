@@ -5,14 +5,14 @@
   font-style: normal; }
 
 html,body,header{
-  width: 360px;
+  width: 320px;
 }
   #spotlight{
     background: url(../img/spotlight.png) no-repeat center top;
-    background-size: 360px 240px ;
+    background-size: 320px 240px ;
     height: 240px;
     position: relative;
-    width:360px;
+    width:320px;
   }
   #play{
     background:  url(../img/play.png) no-repeat center top;
@@ -86,18 +86,18 @@ color:#f1339d;
 
   .pane{
 
-    width: 360px;
+    width: 320px;
   }
 .bar{
   height: 70px;
-  width: 360px;
+  width: 320px;
 }
 .bar.bar-light .title{
   color:#eb7d15;
   font-family: "NexaLight";
   font-size: 32px;
   top:17px;
-  width: 360px;
+  width: 320px;
 }
 
 .ionic-logo {
