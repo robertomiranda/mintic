@@ -26,12 +26,13 @@ html,body,header{
   }
   #pause{
    background:  url(../img/pause.png) no-repeat center top;
-    background-size: 65px;
+    background-size: 90px;
     background-color: transparent;
     border:none;
+    height: 90px;
     position: absolute;
     left: 145px;
-    bottom: 60px;
+    bottom: -4px;
   }
  
 
