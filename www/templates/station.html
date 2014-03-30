@@ -4,11 +4,11 @@
   The PetCtrl pulls data from the Pets service (service.js)
   The Pets service returns an array of pet data
 -->
-<ion-view title="Mobile radio">
-<ion-content has-header="true" scroll="true" ng-controller="StationCtrl">
+<ion-view>
+<ion-content ng-controller="StationCtrl" scroll="true">
 <div id="spotlight">
-  <button id ="play" class="button" ng-click="playStation()" ng-hide="playing" title="Reproducir"></button>
-  <button id="pause" class="button" ng-click="pauseStation()" ng-show="playing" title="Pausar"></button>
+  <button id ="play" class="button" ng-click="playStation()" ng-hide="playing"></button>
+  <button id="pause" class="button" ng-click="pauseStation()" ng-show="playing"></button>
   <p>http://www.inci.gov.co/</p>
 </div>
 <div id="redsocial">
@@ -16,6 +16,7 @@
 <button id="sk"class="button ion-social-skype-outline" ><p id="o">Skype</p></button>
 </div>
 
+</div>
 <ion-list >
 
 <div class="item item-divider">
@@ -28,9 +29,6 @@
 <p data-url="{{program.url}}">{{program.name}}</p>
 </ion-item>
 </ion-list>
-
-
-
 
 </ion-content>
 </ion-view>
